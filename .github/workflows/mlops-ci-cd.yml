@@ -48,6 +48,9 @@ jobs:
       - name: Afficher le DAG DVC
         run: dvc dag
 
+      - name: Lister fichiers pour debug
+        run: ls -R
+
 
       - name: Générer données brutes
         run: python src/generate_data.py
